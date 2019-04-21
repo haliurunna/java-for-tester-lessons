@@ -6,15 +6,17 @@ public class MyFirstProgram {
 		hello("user");
 		hello("Marina");
 
-		double len = 5;
-		System.out.println("S квадрата со стороной " + len + "=" + area(len));
+		Square s = new Square(5);
+		System.out.println("S квадрата со стороной " + s.l + " = " + s.area());
+
+		Rectangle r = new Rectangle(3,7);
+		System.out.println("S прямоугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
 	}
 
 	public static void hello(String somebody) {
 		System.out.println("Hello, " + somebody + "!");
 	}
 
-	public static double area(double l) {
-		return l*l;
-	}
+
+
 }
